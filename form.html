@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="formcss.css">
+</head>
+<body>
+<h1 id='title'>Survey Form</h1>
+<p id='description'>A Survey Form For Practice!</p>
+<div>
+<form id='survey-form'>
+        <div id = NEN>
+        <lable id="name-label" for = "name">Name:</label>
+        <input id="name" type="text" placeholder="type the name" required /><br>
+        <lable id="email-label" for = "email">Email:</label>
+        <input id="email" type="email" placeholder="type the email" required /><br>
+        <lable id="agenumber" for = "age">age:</label>
+        <input type="number" placeholder="type the age" step="1" min="0" max="100"  id="age">
+        <br>
+        </div>   
+        <div id = Sel>
+        <lable id="Gender" for = "dropdown">Gender</lable>
+        <select name="dropdown">
+            <option value="female">female</option>
+            <option value="male">male</option>
+            <option value="unknown">unknown</option>
+        </select>
+        <br>
+        </div>
+    
+        <div id ="group">
+        <label id="brand">Which is the best smartphone brand?</label><br>
+        <input type="radio" id="brand" value="Apple"> Male
+        <input type="radio" id="brand" value="Samsung"> Female
+        <input type="radio" id="brand" value="other"> Other <br>
+        </div>
+        <div id = "comment">
+        <label id="dad" for = "message">Any thing you want to talk to you dad?</label><br>
+        <textarea name="message" rows="10" cols="30" style="width:500px; height:300px;"></textarea>
+        </div>
+        <div id = "checkbox">
+        <label>Assume you are hungry, what would you like to eat?</label><br>
+        <label for = "apple"> Apple.</label>
+        <input type="checkbox" id="apple" value="apple" id="checkbox">
+        <label for = "Noodle"> Noodle.</label>
+        <input type="checkbox" id="Noodle" value="Noodle" id="checkbox">
+        <label for = "Cake"> Cake.</label>
+        <input type="checkbox" id="Cake" value="Cake" id="checkbox">
+        
+        </div>
+        
+        <div id="button">
+        <button id="submit" type="button" >Click Me!</button>
+        </div>
+        
+</form>
+</div>
+</body>
+</html>
